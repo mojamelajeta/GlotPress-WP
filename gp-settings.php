@@ -108,7 +108,9 @@ require_once GP_PATH . GP_INC . 'formats/format_resx.php';
 require_once GP_PATH . GP_INC . 'formats/format_strings.php';
 require_once GP_PATH . GP_INC . 'formats/format_properties.php';
 
-// Let's do it again, there are more variables added since last time we called it
+require_once GP_PATH . GP_INC . 'wp-settings.php';
+
+// Let's do it again, there are more variables added since last time we called it.
 gp_set_globals( get_defined_vars() );
 
 GP::$router->set_default_routes();
